@@ -1,6 +1,7 @@
 *.cm[ix]
+*.cmxa
 *.out
-*.o
+*.[ao]
 factor
 gcd
 random
