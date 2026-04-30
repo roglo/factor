@@ -44,4 +44,5 @@ value power_int_positive_int _ _ =
   failwith "not impl: power_int_positive_int"
 ;
 
+value square_big_int _ = failwith "not impl: square_big_int";
 value sqrt_big_int _ = failwith "not impl: sqrt_big_int";
