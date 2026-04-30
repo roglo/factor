@@ -1,0 +1,32 @@
+bnum.cmo: bnum.cmi bnum_def.cmi 
+bnum.cmx: bnum.cmi bnum_def.cmi 
+bnum.cmi: bnum_def.cmi 
+factor.cmo: bnum.cmi bnum_def.cmi fmr.cmi quad_sieve.cmi rho_pollard.cmi \
+    stringexp.cmi 
+factor.cmx: bnum.cmx bnum_def.cmi fmr.cmx quad_sieve.cmx rho_pollard.cmx \
+    stringexp.cmx 
+fmr.cmo: bnum.cmi bnum_def.cmi fmr.cmi 
+fmr.cmx: bnum.cmx bnum_def.cmi fmr.cmi 
+fmr.cmi: bnum_def.cmi 
+gauss.cmo: stringexp.cmi 
+gauss.cmx: stringexp.cmx 
+gcd.cmo: bnum.cmi bnum_def.cmi 
+gcd.cmx: bnum.cmx bnum_def.cmi 
+pseudofact.cmo: bnum.cmi bnum_def.cmi 
+pseudofact.cmx: bnum.cmx bnum_def.cmi 
+quad_sieve.cmo: bnum_def.cmi quad_sieve.cmi 
+quad_sieve.cmx: bnum_def.cmi quad_sieve.cmi 
+quad_sieve.cmi: bnum_def.cmi 
+resolve_2sq.cmo: bnum.cmi bnum_def.cmi fmr.cmi quad_sieve.cmi rho_pollard.cmi \
+    stringexp.cmi 
+resolve_2sq.cmx: bnum.cmx bnum_def.cmi fmr.cmx quad_sieve.cmx rho_pollard.cmx \
+    stringexp.cmx 
+rho_pollard.cmo: bnum_def.cmi rho_pollard.cmi 
+rho_pollard.cmx: bnum_def.cmi rho_pollard.cmi 
+rho_pollard.cmi: bnum_def.cmi 
+stringexp.cmo: stringexp.cmi 
+stringexp.cmx: stringexp.cmi 
+two_squares.cmo: stringexp.cmi 
+two_squares.cmx: stringexp.cmx 
+what.cmo: bnum.cmi bnum_def.cmi stringexp.cmi 
+what.cmx: bnum.cmx bnum_def.cmi stringexp.cmx 

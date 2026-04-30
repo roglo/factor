@@ -1,0 +1,76 @@
+(* $Id: CONJECTURE,v 1.9 2009/11/18 07:38:57 deraugla Exp $ *)
+
+Conjecture (1) :
+
+Si un nombre est de la forme m²+1, tous ses diviseurs peuvent s'écrire sous
+la forme d'une somme de deux carrés.
+
+Permettrait de résoudre la fin de la démonstration de Gauss du théorème
+des deux carrés de Fermat de manière plus claire.
+
+   ---
+
+Conjecture (2) :
+   propriété déjà connue :
+     http://fr.wikipedia.org/wiki/Ordre_(théorie_des_groupes)
+
+Pour tout diviseur d de p-1 (p étant un nombre premier), il existe a tel
+que l'ordre de a modulo p est égal à d. C'est vrai pour d = p-1 mais est-ce
+vrai pour les autres diviseurs ?
+
+  Ça a l'air d'être vrai (par contre faux pour nombre n quelconque et phi(n))
+  d'après programme.
+
+   ---
+
+De plus, conjecture (3) suivante, plus précise :
+
+Le nombre de solutions pour a serait égal à phi(d), et ce serait donc normal
+qu'il en existe toujours.
+
+   ---
+
+Conjecture (4) : fausse ! du moins, vraie que pour certaines valeurs...
+
+Si p premier = 4n+1, p=a²+b² avec a tel que :
+
+   Soit i, la plus petite valeur telle que :
+       ord(i) mod p = 4
+   Il existe en effet, d'après la conjecture (3), 2 (= phi(4)) valeurs
+   entre 1 et p-1 dont l'ordre vaut 4 (qui divise bien p-1).
+
+   la conjecture est :
+      1/ a = p mod i
+      2/ et donc p - (p mod i)² serait un carré (celui de b)
+
+i¹ =  i [p]
+i² = -1 [p]
+i³ = -i [p]
+i⁴ =  1 [p]
+N'est pas sans rappeler le i des complexes.
+
+   Semble fausse :
+     73=19²+-288
+     89=21²+-352
+   Cependant :
+     1/ il semble que ça marche pour pas mal de nombres au début
+     2/ y en a toujours pour qui ça marche (mmm....)
+     3/ pour ceux dont ça marche, on a bien p - (p mod i)² qui est un carré
+     4/ pour ceux dont ça marche pas, (p mod i)² est supérieur à p.
+
+   ---
+
+Conjecture (5) :
+
+   Soit p un premier de la forme 4n+1 et i une des deux valeurs telles
+   que i²=-1 (il y en a '2' d'après la conjecture (3), car 4 divise
+   p-1 et phi(4)='2'). Dans le théorème des deux carrés de Fermat, il
+   existe a et b tels que p=a²+b². Conjecture :
+        b = ia mod p
+     ou b = p - ia mod p
+
+   A l'air vraie.
+
+      a²+b² = (a+ib)(a-ib) [p]
+
+   13 = (5x3+2)(5x3-2) = 17x13
