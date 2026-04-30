@@ -1,5 +1,6 @@
 *.cm[ix]
 *.out
+*.o
 factor
 gcd
 random
