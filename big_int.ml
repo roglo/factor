@@ -1,6 +1,6 @@
-type big_int = int;
+type big_int = { sign : int; abs_value : nat };
 
-value zero_big_int = failwith "not impl: zero_big_int";
+value zero_big_int = { sign = 0; abs_value = make_nat 1 };
 value unit_big_int = failwith "not impl: unit_big_int";
 
 value big_int_of_int _ = failwith "not impl: big_int_of_int";
