@@ -15,6 +15,9 @@ make
 make install
 ```
 
+Then return to the present directory and type
+
+
 ```bash
 make
 ```
