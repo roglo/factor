@@ -8,4 +8,3 @@ value length_of_digit = failwith "not impl: Nat.length_of_digit";
 value num_leading_zero_bits_in_digit _ _ =
   failwith "not impl: Nat.num_leading_zero_bits_in_digit"
 ;
-
