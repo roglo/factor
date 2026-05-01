@@ -11,10 +11,6 @@ WHAT_OBJS=bnum.cmx stringexp.cmx what.cmx
 MLBROT_DIR=../../mlbrot/master
 
 all: $(OUT)
-# all: nums.cmxa $(OUT)
-
-nums.cmxa: nat.cmx big_int.cmx num.cmx
-	ocamlopt nat.cmx big_int.cmx num.cmx -o $@ -a
 
 depend:
 	export LC_ALL=C; for i in $$(ls *.ml *.mli); do camlp5r pr_depend.cmo $(C5FLAGS) $$i; done > .depend.new
@@ -66,7 +62,7 @@ what: $(WHAT_OBJS)
 	ocamlopt $$(camlp5 -where)/camlp5.cmxa $(MLBROT_DIR)/mpz.cmx $(MLBROT_DIR)/ml_mpz.o -cclib -lgmp nums.cmxa $(WHAT_OBJS) -o $@
 
 clean:
-	rm -f *.cm[oix] *.o $(OUT)
+	rm -f *.cm[oix] *.cmxa *.[ao] $(OUT)
 
 .SUFFIXES: .mli .ml .cmi .cmo .cmx
 
